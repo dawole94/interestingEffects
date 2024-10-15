@@ -11,6 +11,9 @@ module.exports = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      backgroundImage: {
+        'custom-gradient': 'linear-gradient(45deg, rgb(44, 44, 251), rgb(211, 59, 59))',
+      },
     },
   },
   plugins: [],

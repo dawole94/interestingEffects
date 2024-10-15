@@ -7,22 +7,34 @@ const Background = () => {
   const elementRef = useRef(null);
 
   useEffect(() => {
-    gsap.to(elementRef.current, {
+
+    const tl = gsap.timeline({ repeat: -1, yoyo: true });
+
+    tl.to(elementRef.current, {
       duration: 5,
-      background: "linear-gradient(45deg, #0000ff, #ff0000)",
+      backgroundImage: "linear-gradient(45deg, rgb(211, 59, 59), rgb(44, 44, 251))",
       ease: "linear",
-      yoyo: true,
-      repeat: -1
+      delay: 2
+    })
+    .to(elementRef.current, {
+      duration: 2,
+      backgroundImage: "linear-gradient(45deg, rgb(211, 59, 59), rgb(44, 44, 251))",
+    })
+    .to(elementRef.current, {
+      duration: 5,
+      backgroundImage: "linear-gradient(45deg, rgb(44, 44, 251), rgb(211, 59, 59))",
+      ease: "linear",
+    })
+    .to(elementRef.current, {
+      duration: 2,
+      backgroundImage: "linear-gradient(45deg, rgb(44, 44, 251), rgb(211, 59, 59))",
     })
   }, []);
 
   return (
     <div
       ref={elementRef}
-      style={{
-        height: "100%",
-        background: "linear-gradient(45deg, #ff0000, #0000ff)",
-      }}
+      className="bg-custom-gradient h-full"
     />
   );
 };
