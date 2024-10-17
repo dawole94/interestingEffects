@@ -4,7 +4,7 @@ import Background from './components/Background'
 const Homepage = () => {
   return (
     <>
-      <Background/>
+      <Background className="relative -z-10"/>
     </>
   )
 }
