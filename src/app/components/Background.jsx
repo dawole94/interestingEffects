@@ -31,7 +31,7 @@ const Background = () => {
       backgroundImage: "linear-gradient(45deg, rgb(44, 44, 251), rgb(211, 59, 59))",
     })
 
-    const count = window.innerWidth<=640 ? 500 : 200, 
+    const count = window.innerWidth<=640 ? 500 : 75, 
           starClass = "star",
           starColors = ["white", "yellow", "orange", "lightpink"],
           starContainer = starContainerRef.current,
@@ -49,13 +49,13 @@ const Background = () => {
         scale: gsap.utils.random(0.5,1),
         backgroundColor: gsap.utils.random(starColors)
       });
-      gsap.to(star, gsap.utils.random(5,10), {
+      gsap.to(star, gsap.utils.random(3,7), {
         y: h,
         repeat: -1,
         ease: "none",
         delay: -10
       });
-      gsap.to(star, gsap.utils.random(1,6), {
+      gsap.to(star, gsap.utils.random(1,5), {
         x: "+=50",
         ease: "power1.inOut",
         repeat: -1,
@@ -67,7 +67,7 @@ const Background = () => {
         repeat: -1,
         yoyo: true
       })
-      gsap.to(star, gsap.utils.random(3,7), {
+      gsap.to(star, gsap.utils.random(2,4), {
         rotation: 360,
         ease: "power1.inOut",
         repeat: -1,
@@ -79,7 +79,7 @@ const Background = () => {
   }, []);
 
   return (
-    <div ref={elementRef} className="bg-custom-gradient h-full">
+    <div ref={elementRef} className="bg-custom-gradient h-full w-full left-0 top-0 fixed -z-10">
       <div className="relative w-full h-full overflow-hidden" ref={starContainerRef}></div>
     </div>
   );

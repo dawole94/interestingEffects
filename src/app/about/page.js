@@ -1,8 +1,13 @@
 import React from 'react'
+import Background from '../components/Background'
 
 const About = () => {
   return (
-    <div> About us</div>
+    <>
+      <Background/>
+      <div> About us</div>
+    </>
+    
   )
 }
 
