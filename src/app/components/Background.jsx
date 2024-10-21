@@ -31,9 +31,9 @@ const Background = () => {
       backgroundImage: "linear-gradient(45deg, rgb(44, 44, 251), rgb(211, 59, 59))",
     })
 
-    const count = window.innerWidth<=640 ? 500 : 75, 
+    const count = window.innerWidth<=640 ? 200 : 75, 
           starClass = "star",
-          starColors = ["white", "yellow", "orange", "lightpink"],
+          starColors = ["lightgrey", "yellow", "orange", "lightpink"],
           starContainer = starContainerRef.current,
           w = starContainer.offsetWidth,
           h = starContainer.offsetHeight;
