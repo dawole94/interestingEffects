@@ -2,16 +2,18 @@
 
 import React from 'react'
 import Background from './components/Background'
-import BirdContainer from './components/BirdContainer'
-import Title from './components/Title'
-
+import NormalComponent from './components/NormalComponent'
+import SmallComponent from './components/SmallComponent'
 
 const Homepage = () => {
   return (
     <>
       <Background/>
-      <Title/>
-      <BirdContainer/>
+      <SmallComponent/>
+      <NormalComponent/>
+      <p>abc</p>
+      {/* <BirdContainer/>
+      <SphereScene/> */}
     </>
   )
 }

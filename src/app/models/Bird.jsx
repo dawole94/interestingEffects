@@ -20,6 +20,7 @@ import {gsap} from 'gsap'
 
 const Bird = (props) => {
   const group = useRef()
+  const {scale} = props;
   const { nodes, materials, animations } = useGLTF('/bird_orange.glb')
   const { actions } = useAnimations(animations, group)
 
@@ -52,7 +53,7 @@ const Bird = (props) => {
     <group 
       ref={group} 
       {...props} 
-      scale={[2.8,2.8,2.8]} 
+      scale={scale} 
       position={[0,-2.4,0]} dispose={null}
       onPointerOver={handlePointerOver} 
       onPointerOut={handlePointerOut} 

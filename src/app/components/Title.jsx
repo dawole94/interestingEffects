@@ -51,7 +51,7 @@ const Title = () => {
   )
 
   return (
-    <div ref={divRef} className={`title mt-20 h-24 text-5xl sm:h-40 sm:text-7xl text-white font-bold flex flex-col items-center ${kablammo.className}`}>
+    <div ref={divRef} className={`title h-1/3 text-5xl sm:h-40 sm:text-7xl text-white font-bold flex flex-col items-center justify-center ${kablammo.className}`}>
       <p ref={interestingRef}></p>
       <p ref={effectsRef}>
       {/* <svg className="inline" width="2.5rem" height="2.25rem" xmlns="http://www.w3.org/2000/svg">
