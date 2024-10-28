@@ -13,10 +13,10 @@ const SmallComponent = () => {
           <BirdContainer birdContHeight={'33.33%'} scale={[2.8,2.8,2.8]}/>
           <div className='flex' style={{height: '33.33%'}}>
             <div style={{width: '50%', height: '100%'}}>
-              <SphereScene color="lightblue" scale={[2, 2.30, 2]} position={[2, 1.25, 2.5]}/>
+              <SphereScene color="lightblue" scale={[2, 2.30, 2]} position={[2, 1.25, 2.5]} text="About" url="/about"/>
             </div>
             <div style={{width: '50%', height: '100%'}}>
-              <SphereScene  color="pink" scale={[2, 2.30, 2]} position={[2, 1.25, 2.5]}/>
+              <SphereScene  color="pink" scale={[2, 2.30, 2]} position={[2, 1.25, 2.5]} text="Contact"/>
             </div>
           </div>
         </div>
