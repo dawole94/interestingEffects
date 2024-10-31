@@ -9,7 +9,7 @@ const BirdContainer = ({birdContHeight, scale}) => {
   return (
     <div style={{width: '100%', height: birdContHeight}}>
       <Canvas>
-        <Bird className="relativ z-10 " scale={scale}/>
+        <Bird className="relativ z-10" scale={scale}/>
         <OrbitControls
           minPolarAngle={Math.PI / 2} 
           maxPolarAngle={Math.PI / 2}

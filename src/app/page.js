@@ -4,6 +4,7 @@ import React from 'react'
 import Background from './components/Background'
 import NormalComponent from './components/NormalComponent'
 import SmallComponent from './components/SmallComponent'
+import Landscapes from './components/Landscapes'
 
 const Homepage = () => {
   return (
@@ -11,7 +12,8 @@ const Homepage = () => {
       <Background/>
       <SmallComponent/>
       <NormalComponent/>
-      <p>abc</p>
+      <Landscapes/>
+      
       {/* <BirdContainer/>
       <SphereScene/> */}
     </>

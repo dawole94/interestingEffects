@@ -37,13 +37,13 @@ const Title = () => {
     tl.to(divRef.current, {
       delay: 3.5,
       duration: 1,
-      transition: 2,
+      // transition: 2,
       opacity: 0,
     })
     .to(divRef.current, {
       delay: 0.5,
       duration: 1,
-      transition: 2,
+      // transition: 2,
       opacity: 1,
       ease: "power1.inOut"
     })

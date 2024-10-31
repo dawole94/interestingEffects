@@ -89,7 +89,7 @@ const SphereComponent = ({color, scale, animation, text, url}) => {
         delay: 3,
         opacity: 1, 
         duration: 1,
-        transition: 1
+        // transition: 1
       })
       .to(meshRef.current.position, {
           x: 1.25, // Przesunięcie wzdłuż osi x
