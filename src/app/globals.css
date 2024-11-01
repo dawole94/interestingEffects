@@ -58,7 +58,15 @@ body {
   width: 40%
 }
 
+.static {
+  width: 20%
+}
+
 .img-container img {
   transition: transform 0.3s ease-in-out, width 0.3s ease-in-out;
+  border-radius: 1rem;
+}
+
+.img-container-small img {
   border-radius: 1rem;
 }

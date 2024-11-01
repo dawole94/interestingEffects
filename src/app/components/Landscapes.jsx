@@ -62,15 +62,15 @@ const Landscapes = () => {
 
   return (
     <div className='flex flex-col items-center gap-20 mt-16'>
-      <p ref={textRef} className='text-white text-center text-xl font-bold'>In our world we can animate many things like for example landscape's pictures.</p>
-      <div ref={imgContainerRef} className="img-container flex gap-4 w-[60%]" style={{height:'30rem'}}>
-        <img ref={img1} className="w-[20%] h-[100%] object-cover" src="/images/Beach.jpg" onMouseEnter={()=> {handleMouseEnter(img1)}}/>
+      <p ref={textRef} className='text-white text-center text-xl font-bold w-[80%]'>In our world we can animate many things like for example landscape's pictures.</p>
+      <div ref={imgContainerRef} className="img-container flex justify-between w-[80%]" style={{height:'30rem'}}>
+        <img ref={img1} className="w-[18.5%] h-[100%] object-cover" src="/images/Beach.jpg" onMouseEnter={()=> {handleMouseEnter(img1)}}/>
 
-        <img ref={img2} className="w-[20%] active h-[100%] object-cover" src="/images/Forest.jpg" onMouseEnter={()=> {handleMouseEnter(img2)}}/>
+        <img ref={img2} className="w-[18.5%] active h-[100%] object-cover" src="/images/Forest.jpg" onMouseEnter={()=> {handleMouseEnter(img2)}}/>
 
-        <img ref={img3} className="w-[20%] h-[100%] object-cover" src="/images/River.jpg" onMouseEnter={()=> {handleMouseEnter(img3)}}/>
+        <img ref={img3} className="w-[18.5%] h-[100%] object-cover" src="/images/River.jpg" onMouseEnter={()=> {handleMouseEnter(img3)}}/>
 
-        <img ref={img4} className="w-[20%] h-[100%] object-cover" src="/images/Road.avif" onMouseEnter={()=> {handleMouseEnter(img4)}}/>
+        <img ref={img4} className="w-[18.5%] h-[100%] object-cover" src="/images/Road.avif" onMouseEnter={()=> {handleMouseEnter(img4)}}/>
       </div>
     </div>
   )
