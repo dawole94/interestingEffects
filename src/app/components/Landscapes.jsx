@@ -54,7 +54,8 @@ const Landscapes = () => {
       duration: 1,
       scrollTrigger: {
         trigger: imgContainerRef.current, // wyzwalacz animacji
-        start: "top 80%", // animacja zaczyna się, gdy kontener znajdzie się w 80% wysokości okna
+        start: "top 60%", // animacja zaczyna się, gdy kontener znajdzie się w 80% wysokości okna
+        end: "top 0%",
         toggleActions: "play none none reverse", // uruchamia animację przy przewijaniu
       },
     });
