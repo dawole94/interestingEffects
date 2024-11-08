@@ -42,6 +42,7 @@ const Landscapes = () => {
         // start: "top 80%", // punkt, w którym animacja się zaczyna
         // end: "top 20%", // punkt, w którym animacja się kończy
         // scrub: 1, // animacja płynna wraz z przewijaniem
+        scrub: true,
         toggleActions: "play none none reverse", // jak zachowa się animacja (odtwarzanie, pauza itp.)
       },
     });
@@ -55,7 +56,8 @@ const Landscapes = () => {
       scrollTrigger: {
         trigger: imgContainerRef.current, // wyzwalacz animacji
         start: "top 60%", // animacja zaczyna się, gdy kontener znajdzie się w 80% wysokości okna
-        end: "top 0%",
+        end: "top 20%",
+        scrub: true,
         toggleActions: "play none none reverse", // uruchamia animację przy przewijaniu
       },
     });
@@ -63,7 +65,7 @@ const Landscapes = () => {
 
   return (
     <div className='flex flex-col items-center gap-20 mt-16'>
-      <p ref={textRef} className='text-white text-center text-xl font-bold w-[80%]'>In our world we can animate many things like for example landscape's pictures.</p>
+      <p ref={textRef} className='text-white text-center text-3xl font-bold w-[80%]'>In our world we can animate many things like for example landscape's pictures.</p>
       <div ref={imgContainerRef} className="img-container flex justify-between w-[80%]" style={{height:'30rem'}}>
         <img ref={img1} className="w-[18.5%] h-[100%] object-cover" src="/images/Beach.jpg" onMouseEnter={()=> {handleMouseEnter(img1)}}/>
 

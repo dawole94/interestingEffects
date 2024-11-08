@@ -45,7 +45,7 @@ const LandscapesSmall = () => {
 
   return (
     <div className="flex flex-col items-center gap-16">
-      <p ref={textRef} className='text-white text-center text-xl font-bold w-[80%]'>In our world we can animate many things like for example landscape's pictures.</p>
+      <p ref={textRef} className='text-white text-center text-3xl font-bold w-[80%]'>In our world we can animate many things like for example landscape's pictures.</p>
       <div ref={imgContainerSmallRef} className="img-container-small flex flex-wrap justify-center items-center gap-4 w-[80%]" /*style={{height:'30rem'}}*/>
         <img ref={img1} className="w-[45%] object-cover" src="/images/Beach.jpg" style={{height:'8rem'}}/>
 

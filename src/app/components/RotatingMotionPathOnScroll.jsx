@@ -50,8 +50,8 @@ const RotatingMotionPathOnScroll = () => {
   }, []);
 
   return (
-    <div className="mt-20 flex justify-center" style={{height: '100rem'}}>
-      <div ref={containerRef} className="w-[80%]">
+    <div className="mt-20 flex justify-center" style={{height: '50rem'}}>
+      <div ref={containerRef} className="w-[80%]" style={{height: '50rem'}}>
         <img ref={elementRef} src="images/rocket.png"
         style={{ width: '7rem', height: '7rem', objectFit: 'cover' }} 
         />
