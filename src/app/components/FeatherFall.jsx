@@ -68,14 +68,17 @@ const FeatherFall = () => {
     // })
   }, []);
 
+  // const windowWidth = window.innerWidth;
+
   return (
-    <div className="relative w-100 h-screen">
+    <div className="fixed left-0 top-0 sm:relative w-100 h-screen z-10">
       <img ref={featherRef} src="images/feather.png"
         style={{
-          width: "30rem",
-          height: "15rem",
+          // width: "30rem",
+          // height: "15rem",
           objectFit: 'fill',
-          opacity: 0
+          opacity: 0,
+          ...(window.innerWidth > 640 ? { width: "30rem", height: "15rem" } : {width: "70vw", height: "auto"}),
           // backgroundColor: "lightblue",
           // borderRadius: "50%",
           // transformOrigin: "center", // ustawienie środka obrotu

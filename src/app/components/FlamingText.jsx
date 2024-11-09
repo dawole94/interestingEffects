@@ -24,7 +24,7 @@ const FlamingText = () => {
   }, []);
 
   return (
-    <div className="w-[65%] text-4xl" style={{fontWeight: 'bold', color: '#6fa3f7' }}>
+    <div className="sm:w-[65%] w-[80%] text-4xl" style={{fontWeight: 'bold', color: '#6fa3f7' }}>
       <p ref={textRef}>We project and design websites with interesting effects. The powerfull animations and 3D objects make really the coding to be not only technical skill, but also some kind of art.</p>
     </div>
   );

@@ -8,9 +8,9 @@ import FlamingText from '../components/FlamingText'
 const About = () => {
   return (
     <>
-      <div className='flex justify-between bg-black'>
+      <div className='sm:flex sm:justify-between bg-black'>
         <FeatherFall/>
-        <div className='flex justify-center items-center w-[50%]'>
+        <div className='flex justify-center items-center sm:w-[50%] w-[100%] h-screen'>
           <FlamingText/>
         </div>
       </div>
