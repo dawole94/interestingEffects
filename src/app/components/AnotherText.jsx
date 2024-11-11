@@ -16,7 +16,7 @@ const AnotherText = () => {
       scrollTrigger: {
         trigger: pRef.current,
         start: "top 60%",
-        end: "top 0%",
+        end: "top 20%",
         // markers: true,
         scrub: true,
         toggleActions: 'play none none reverse'

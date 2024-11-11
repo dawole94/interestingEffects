@@ -10,6 +10,7 @@ import RotatingMotionPathOnScroll from './components/RotatingMotionPathOnScroll'
 import ShatteringTextOnScroll from './components/ShatteringTextOnScroll'
 import AnotherText from './components/AnotherText'
 import EmptyComponent from './components/EmptyComponent'
+import CardSwap from './components/CardSwap'
 
 const Homepage = () => {
   return (
@@ -21,6 +22,7 @@ const Homepage = () => {
       <ShatteringTextOnScroll/>
       <RotatingMotionPathOnScroll/>
       <AnotherText/>
+      <CardSwap/>
       <EmptyComponent/>
       
       {/* <BirdContainer/>
