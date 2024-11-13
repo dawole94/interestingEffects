@@ -13,6 +13,7 @@ import EmptyComponent from './components/EmptyComponent'
 import CardSwap from './components/CardSwap'
 import Explosion from './components/Explosion'
 import SpringMotion from './components/SpringMotion'
+import Footer from './components/Footer'
 // import ExplodingCircles from './components/ExplodingCircles'
 
 const Homepage = () => {
@@ -28,6 +29,7 @@ const Homepage = () => {
       <CardSwap/>
       <Explosion/>
       <SpringMotion/>
+      <Footer/>
       <EmptyComponent/>
       
       {/* <BirdContainer/>
