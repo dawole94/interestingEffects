@@ -11,6 +11,9 @@ import ShatteringTextOnScroll from './components/ShatteringTextOnScroll'
 import AnotherText from './components/AnotherText'
 import EmptyComponent from './components/EmptyComponent'
 import CardSwap from './components/CardSwap'
+import Explosion from './components/Explosion'
+import SpringMotion from './components/SpringMotion'
+// import ExplodingCircles from './components/ExplodingCircles'
 
 const Homepage = () => {
   return (
@@ -23,6 +26,8 @@ const Homepage = () => {
       <RotatingMotionPathOnScroll/>
       <AnotherText/>
       <CardSwap/>
+      <Explosion/>
+      <SpringMotion/>
       <EmptyComponent/>
       
       {/* <BirdContainer/>

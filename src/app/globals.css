@@ -117,3 +117,50 @@ body {
   pointer-events: none;
   z-index: 100;
 }
+
+#explosion-container {
+  position: relative;
+  width: 7rem;
+  height: 7rem;
+  margin: 7rem auto;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.particle {
+  position: absolute;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: orange;
+  border-radius: 50%;
+  /* opacity: 0; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.spring-container {
+  position: relative;
+  width: 100px;
+  height: 300px;
+  margin: 4rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.spring-svg {
+  width: 100px;
+  height: 300px;
+  transform-origin: top center;
+  overflow: visible;
+}
+
+.mass {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(251, 97, 210);
+  border-radius: 50%;
+  top: 120px;
+}
