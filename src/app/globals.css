@@ -21,6 +21,7 @@
 }
 
 body {
+  overflow-x: hidden;
   color: var(--foreground);
   /* background: var(--background); */
   /* background: linear-gradient(45deg,rgb(151, 79, 79),rgb(120, 120, 201));
