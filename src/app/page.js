@@ -1,6 +1,7 @@
 "use client"
 
 import React from 'react'
+import { useState, useEffect } from "react";
 import Background from './components/Background'
 import NormalComponent from './components/NormalComponent'
 import SmallComponent from './components/SmallComponent'
@@ -14,15 +15,29 @@ import CardSwap from './components/CardSwap'
 import Explosion from './components/Explosion'
 import SpringMotion from './components/SpringMotion'
 import Footer from './components/Footer'
-// import ExplodingCircles from './components/ExplodingCircles'
+import { useMediaQuery } from "react-responsive";
 
 const Homepage = () => {
+
+  const [isClient, setIsClient] = useState(false);
+
+  // Ustawienie stanu, aby render działał tylko po stronie klienta
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  const isBigScreen = useMediaQuery({ minWidth: 641 });
+
+  if (!isClient) {
+    return null; // Nie renderuj, dopóki klient nie jest gotowy
+  } 
+
   return (
     <>
       <Background/>
       <SmallComponent/>
       <NormalComponent/>
-      {window.innerWidth > 640 ? <Landscapes/> : <LandscapesSmall/>}
+      {isBigScreen ? <Landscapes/> : <LandscapesSmall/>}
       <ShatteringTextOnScroll/>
       <RotatingMotionPathOnScroll/>
       <AnotherText/>
